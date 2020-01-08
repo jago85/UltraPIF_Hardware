@@ -12,5 +12,6 @@ In this repository you find the KiCad hardware files.
 You can find hints for assembly and installation in [the wiki](https://github.com/jago85/UltraPIF_Hardware/wiki).
 
 ![Interface Board](https://github.com/jago85/UltraPIF_Hardware/wiki/images/interface_top.jpg)
-
+![Adapter Board](https://github.com/jago85/UltraPIF_Hardware/wiki/images/adapter_board.jpg)
+![LED Board](https://github.com/jago85/UltraPIF_Hardware/wiki/images/led_board.jpg)
 ![Interface installed](https://github.com/jago85/UltraPIF_Hardware/wiki/images/interface_installed.jpg)
