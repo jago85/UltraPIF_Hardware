@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name pif_fpga)(type KiCad)(uri ${KIPRJMOD}/pif_fpga.pretty)(options "")(descr ""))
+)

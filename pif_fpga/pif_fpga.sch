@@ -1,0 +1,690 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title "UltraPIF Interface"
+Date "2019-12-16"
+Rev "5"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 6550 1200 1300 400 
+U 588339D7
+F0 "Clock Generation" 60
+F1 "clock_gen.sch" 60
+F2 "CLK_FSO_5" O R 7850 1400 60 
+F3 "CLK_FSC" O R 7850 1500 60 
+F4 "SCL" B L 6550 1300 60 
+F5 "SDA" B L 6550 1400 60 
+F6 "CLK_INT" O R 7850 1300 60 
+$EndSheet
+$Sheet
+S 3200 1200 1650 3700
+U 588464E1
+F0 "FPGA" 60
+F1 "fpga.sch" 60
+F2 "CLK_FPGA" I L 3200 1300 60 
+F3 "SDA" B L 3200 1700 60 
+F4 "SCL" B L 3200 1600 60 
+F5 "CLK_CIC_EEP" I L 3200 3550 60 
+F6 "RC_POR" I L 3200 2800 60 
+F7 "RESET_BTN" I L 3200 3400 60 
+F8 "CIC_DCLK" O L 3200 3750 60 
+F9 "OUTPUT_RST" O L 3200 3100 60 
+F10 "INT_CPU" O L 3200 3200 60 
+F11 "CIC_DIO" B L 3200 3850 60 
+F12 "COLD_RESET" O L 3200 3000 60 
+F13 "EEP_DAT" B L 3200 3650 60 
+F14 "NMI_CPU" O L 3200 3300 60 
+F15 "P4_DAT_OUT" O L 3200 4650 60 
+F16 "P3_DAT_OUT" O L 3200 4450 60 
+F17 "P2_DAT_OUT" O L 3200 4250 60 
+F18 "P1_DAT_OUT" O L 3200 4050 60 
+F19 "DAT_PIF" O L 3200 2600 60 
+F20 "EN_PIF" I L 3200 2900 60 
+F21 "P4_DAT_IN" I L 3200 4550 60 
+F22 "CLK_PIF" I L 3200 2400 60 
+F23 "P3_DAT_IN" I L 3200 4350 60 
+F24 "ADR_PIF" I L 3200 2500 60 
+F25 "P2_DAT_IN" I L 3200 4150 60 
+F26 "P1_DAT_IN" I L 3200 3950 60 
+F27 "FPGA_SCK" I R 4850 3650 60 
+F28 "FPGA_MISO" O R 4850 3850 60 
+F29 "UFM_SN" I R 4850 4050 60 
+F30 "FPGA_MOSI" I R 4850 3750 60 
+F31 "FPGA_CS" I R 4850 3950 60 
+F32 "FPGA_DONE" I R 4850 4250 60 
+F33 "FPGA_INIT" I R 4850 4450 60 
+F34 "FPGA_PROG" I R 4850 4350 60 
+F35 "IRQ" O R 4850 4150 60 
+F36 "P1_AUX" O L 3200 4750 60 
+F37 "RED" I L 3200 1900 60 
+F38 "GREEN" I L 3200 2000 60 
+F39 "BLUE" I L 3200 2100 60 
+$EndSheet
+Wire Wire Line
+	10350 850  10750 850 
+Wire Wire Line
+	10350 2150 10750 2150
+Wire Wire Line
+	10350 2350 10750 2350
+Wire Wire Line
+	10750 750  10350 750 
+Text Label 10350 950  0    39   ~ 0
+GND
+Text Label 10350 2350 0    39   ~ 0
++3V3
+Text Label 10350 750  0    39   ~ 0
++3V3
+Text Label 700  5650 0    39   ~ 0
+CLK_CIC_EEP
+Text Label 700  5750 0    39   ~ 0
+RC_POR
+Text Label 2100 5650 2    39   ~ 0
+RESET_BTN
+Text Label 700  5850 0    39   ~ 0
+CIC_DCLK
+Text Label 700  5950 0    39   ~ 0
+OUTPUT_RST
+Text Label 2100 5750 2    39   ~ 0
+INT_CPU
+Text Label 700  6050 0    39   ~ 0
+CIC_DIO
+Text Label 700  6150 0    39   ~ 0
+COLD_RESET
+Text Label 2100 5850 2    39   ~ 0
+EEP_DAT
+Text Label 700  6250 0    39   ~ 0
+NMI_CPU
+Text Label 2100 6050 2    39   ~ 0
+P4_DAT_OUT
+Text Label 700  6350 0    39   ~ 0
+EN_PIF
+Text Label 2100 5950 2    39   ~ 0
+P4_DAT_IN
+Text Label 700  6550 0    39   ~ 0
+CLK_PIF
+Text Label 2100 6250 2    39   ~ 0
+P3_DAT_OUT
+Text Label 2100 6150 2    39   ~ 0
+P3_DAT_IN
+Text Label 700  6750 0    39   ~ 0
+ADR_PIF
+Text Label 2100 6450 2    39   ~ 0
+P2_DAT_OUT
+Text Label 700  6650 0    39   ~ 0
+GND
+Text Label 2100 6350 2    39   ~ 0
+P2_DAT_IN
+Text Label 700  6950 0    39   ~ 0
+DAT_PIF
+Text Label 2100 6650 2    39   ~ 0
+P1_DAT_OUT
+Text Label 2100 6550 2    39   ~ 0
+P1_DAT_IN
+Text Label 700  5150 0    39   ~ 0
+GND
+Text Label 700  5250 0    39   ~ 0
+CLK_FSO_5
+Text Label 700  5450 0    39   ~ 0
+CLK_FSC
+Text Label 8250 1500 2    39   ~ 0
+CLK_FSC
+Text Label 8250 1400 2    39   ~ 0
+CLK_FSO_5
+Text Label 8250 1300 2    39   ~ 0
+CLK_INT
+Wire Wire Line
+	7850 1300 8250 1300
+Wire Wire Line
+	7850 1400 8250 1400
+Wire Wire Line
+	7850 1500 8250 1500
+Wire Wire Line
+	6550 1300 6250 1300
+Wire Wire Line
+	6550 1400 6250 1400
+Text Label 6250 1300 0    39   ~ 0
+SCL
+Text Label 6250 1400 0    39   ~ 0
+SDA
+Text Label 2750 1700 0    39   ~ 0
+SDA
+Text Label 2750 1600 0    39   ~ 0
+SCL
+Wire Wire Line
+	2750 1600 3200 1600
+Wire Wire Line
+	2750 1700 3200 1700
+Text Label 2750 1300 0    39   ~ 0
+CLK_INT
+Wire Wire Line
+	2750 1300 3200 1300
+Wire Wire Line
+	10350 950  10750 950 
+Wire Wire Line
+	1150 5250 700  5250
+Wire Wire Line
+	1150 5450 700  5450
+Wire Wire Line
+	700  5150 1150 5150
+Text Label 9650 1850 0    39   ~ 0
+UART_RX
+Text Label 10350 1250 0    39   ~ 0
+FPGA_CS
+Text Label 10350 1350 0    39   ~ 0
+FPGA_SCK
+Text Label 10350 1450 0    39   ~ 0
+FPGA_MISO
+Text Label 10350 1950 0    39   ~ 0
+FPGA_MOSI
+Text Label 9650 1750 0    39   ~ 0
+UART_TX
+Text Label 10350 1650 0    39   ~ 0
+UFM_SN
+Text Label 10350 1550 0    39   ~ 0
+FPGA_DONE
+Wire Wire Line
+	10750 1250 10350 1250
+Wire Wire Line
+	10350 1350 10750 1350
+Wire Wire Line
+	10750 1450 10350 1450
+Wire Wire Line
+	10750 1950 10350 1950
+Wire Wire Line
+	10750 1650 10350 1650
+Wire Wire Line
+	10350 1550 10750 1550
+Text Label 5300 4050 2    39   ~ 0
+UFM_SN
+Text Label 5300 4250 2    39   ~ 0
+FPGA_DONE
+Text Label 5300 4350 2    39   ~ 0
+FPGA_PROG
+Text Label 5300 4450 2    39   ~ 0
+FPGA_INIT
+Text Label 5300 3650 2    39   ~ 0
+FPGA_SCK
+Text Label 5300 3850 2    39   ~ 0
+FPGA_MISO
+Text Label 5300 3750 2    39   ~ 0
+FPGA_MOSI
+Text Label 5300 3950 2    39   ~ 0
+FPGA_CS
+Wire Wire Line
+	4850 3650 5300 3650
+Wire Wire Line
+	4850 3750 5300 3750
+Wire Wire Line
+	5300 3850 4850 3850
+Wire Wire Line
+	4850 3950 5300 3950
+Wire Wire Line
+	5300 4050 4850 4050
+Wire Wire Line
+	4850 4250 5300 4250
+Wire Wire Line
+	5300 4350 4850 4350
+Wire Wire Line
+	4850 4450 5300 4450
+Text Label 2750 3550 0    39   ~ 0
+CLK_CIC_EEP
+Text Label 2750 4050 0    39   ~ 0
+P1_DAT_OUT
+Text Label 2750 3950 0    39   ~ 0
+P1_DAT_IN
+Text Label 2750 4150 0    39   ~ 0
+P2_DAT_IN
+Text Label 2750 4250 0    39   ~ 0
+P2_DAT_OUT
+Text Label 2750 4350 0    39   ~ 0
+P3_DAT_IN
+Text Label 2750 4450 0    39   ~ 0
+P3_DAT_OUT
+Text Label 2750 4550 0    39   ~ 0
+P4_DAT_IN
+Text Label 2750 4650 0    39   ~ 0
+P4_DAT_OUT
+Text Label 2750 2800 0    39   ~ 0
+RC_POR
+Text Label 2750 3400 0    39   ~ 0
+RESET_BTN
+Text Label 2750 3750 0    39   ~ 0
+CIC_DCLK
+Text Label 2750 3100 0    39   ~ 0
+OUTPUT_RST
+Text Label 2750 3650 0    39   ~ 0
+EEP_DAT
+Text Label 2750 3300 0    39   ~ 0
+NMI_CPU
+Text Label 2750 2900 0    39   ~ 0
+EN_PIF
+Text Label 2750 2400 0    39   ~ 0
+CLK_PIF
+Text Label 2750 2500 0    39   ~ 0
+ADR_PIF
+Text Label 2750 2600 0    39   ~ 0
+DAT_PIF
+Text Label 2750 3000 0    39   ~ 0
+COLD_RESET
+Text Label 2750 3200 0    39   ~ 0
+INT_CPU
+Text Label 2750 3850 0    39   ~ 0
+CIC_DIO
+Wire Wire Line
+	2750 4650 3200 4650
+Wire Wire Line
+	3200 4550 2750 4550
+Wire Wire Line
+	2750 4450 3200 4450
+Wire Wire Line
+	3200 4350 2750 4350
+Wire Wire Line
+	2750 4250 3200 4250
+Wire Wire Line
+	3200 4150 2750 4150
+Wire Wire Line
+	2750 4050 3200 4050
+Wire Wire Line
+	2750 3950 3200 3950
+Wire Wire Line
+	2750 3850 3200 3850
+Wire Wire Line
+	2750 3750 3200 3750
+Wire Wire Line
+	3200 3650 2750 3650
+Wire Wire Line
+	2750 3550 3200 3550
+Wire Wire Line
+	3200 3400 2750 3400
+Wire Wire Line
+	2750 3300 3200 3300
+Wire Wire Line
+	3200 3200 2750 3200
+Wire Wire Line
+	2750 3100 3200 3100
+Wire Wire Line
+	3200 3000 2750 3000
+Wire Wire Line
+	2750 2900 3200 2900
+Wire Wire Line
+	3200 2800 2750 2800
+Wire Wire Line
+	2750 2600 3200 2600
+Wire Wire Line
+	3200 2500 2750 2500
+Wire Wire Line
+	2750 2400 3200 2400
+Text Label 10350 2150 0    39   ~ 0
+GND
+$Comp
+L Device:C_Small C1
+U 1 1 58B407AA
+P 10300 6150
+F 0 "C1" H 10310 6220 50  0000 L CNN
+F 1 "10u" H 10310 6070 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10300 6150 50  0001 C CNN
+F 3 "" H 10300 6150 50  0000 C CNN
+	1    10300 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 58B411C2
+P 10500 6150
+F 0 "C2" H 10510 6220 50  0000 L CNN
+F 1 "1u" H 10510 6070 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10500 6150 50  0001 C CNN
+F 3 "" H 10500 6150 50  0000 C CNN
+	1    10500 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 58B41A4B
+P 10700 6150
+F 0 "C3" H 10710 6220 50  0000 L CNN
+F 1 "10n" H 10710 6070 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10700 6150 50  0001 C CNN
+F 3 "" H 10700 6150 50  0000 C CNN
+	1    10700 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 6050 10300 5950
+Connection ~ 10300 5950
+Wire Wire Line
+	10500 5950 10500 6050
+Connection ~ 10500 5950
+Wire Wire Line
+	10700 5950 10700 6050
+Wire Wire Line
+	10100 6350 10300 6350
+Wire Wire Line
+	10700 6350 10700 6250
+Wire Wire Line
+	10500 6250 10500 6350
+Connection ~ 10500 6350
+Wire Wire Line
+	10300 6250 10300 6350
+Connection ~ 10300 6350
+Text Label 10100 6350 0    39   ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even P1
+U 1 1 58B71EB0
+P 1450 6050
+F 0 "P1" H 1450 7100 50  0000 C CNN
+F 1 "CONN_02X20" V 1500 6050 50  0000 C CNN
+F 2 "pif_fpga:Amphenol_MezzoStak-10106813_2x20x0.5mm" H 1450 5100 50  0001 C CNN
+F 3 "" H 1450 5100 50  0000 C CNN
+	1    1450 6050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 6950 1650 6950
+Wire Wire Line
+	1650 6850 2100 6850
+Text Label 2100 6950 2    39   ~ 0
+GREEN
+Text Label 2100 6850 2    39   ~ 0
+RED
+Wire Wire Line
+	1650 5150 2100 5150
+Wire Wire Line
+	1650 7050 2100 7050
+Wire Wire Line
+	1650 6650 2100 6650
+Wire Wire Line
+	1650 6550 2100 6550
+Wire Wire Line
+	1650 6450 2100 6450
+Wire Wire Line
+	1650 6350 2100 6350
+Wire Wire Line
+	2100 6250 1650 6250
+Wire Wire Line
+	1650 6150 2100 6150
+Wire Wire Line
+	1650 6050 2100 6050
+Wire Wire Line
+	1650 5950 2100 5950
+Wire Wire Line
+	1650 5850 2100 5850
+Wire Wire Line
+	1650 5750 2100 5750
+Wire Wire Line
+	1650 5650 2100 5650
+Wire Wire Line
+	1650 5350 2100 5350
+Wire Wire Line
+	1650 5250 2100 5250
+Wire Wire Line
+	700  5650 1150 5650
+Wire Wire Line
+	1150 7050 700  7050
+Wire Wire Line
+	700  5350 1150 5350
+Wire Wire Line
+	1150 6950 700  6950
+Wire Wire Line
+	700  6850 1150 6850
+Wire Wire Line
+	1150 6750 700  6750
+Wire Wire Line
+	1150 6650 700  6650
+Wire Wire Line
+	700  6550 1150 6550
+Wire Wire Line
+	1150 6450 700  6450
+Wire Wire Line
+	700  6350 1150 6350
+Wire Wire Line
+	1150 6250 700  6250
+Wire Wire Line
+	700  6150 1150 6150
+Wire Wire Line
+	1150 6050 700  6050
+Wire Wire Line
+	700  5950 1150 5950
+Wire Wire Line
+	1150 5850 700  5850
+Wire Wire Line
+	700  5750 1150 5750
+Wire Wire Line
+	1150 5550 700  5550
+Text Label 700  6850 0    39   ~ 0
+GND
+Text Label 700  6450 0    39   ~ 0
+GND
+Text Label 700  7050 0    39   ~ 0
+GND
+Text Label 700  5550 0    39   ~ 0
+GND
+Text Label 700  5350 0    39   ~ 0
+GND
+Text Label 2100 7050 2    39   ~ 0
+BLUE
+Text Notes 850  4950 0    39   ~ 0
+Mirrored\n(1 mates with 2, 3 mates with 4, ...)
+Wire Wire Line
+	10100 5950 10300 5950
+Text Label 10100 5950 0    39   ~ 0
++3V3
+Wire Wire Line
+	1650 5550 2100 5550
+Wire Wire Line
+	1650 5450 2100 5450
+Text Label 2100 5550 2    39   ~ 0
++3V3
+Text Label 2100 5450 2    39   ~ 0
++3V3
+Text Label 2100 5350 2    39   ~ 0
++3V3
+Text Label 2100 5250 2    39   ~ 0
++3V3
+Text Label 2100 5150 2    39   ~ 0
++3V3
+Wire Wire Line
+	1650 6750 2100 6750
+Wire Wire Line
+	10750 1150 10350 1150
+Text Label 10350 1150 0    39   ~ 0
+IRQ
+Wire Wire Line
+	4850 4150 5300 4150
+Text Label 5300 4150 2    39   ~ 0
+IRQ
+Text Label 10350 850  0    39   ~ 0
++3V3
+Text Label 10350 1050 0    39   ~ 0
+GND
+Wire Wire Line
+	10750 1050 10350 1050
+Text Label 10350 2250 0    39   ~ 0
+GND
+Text Label 10350 2450 0    39   ~ 0
++3V3
+Wire Wire Line
+	10350 2250 10750 2250
+Wire Wire Line
+	10750 2450 10350 2450
+Wire Wire Line
+	3200 4750 2750 4750
+Text Label 2750 4750 0    39   ~ 0
+P1_AUX
+Text Notes 3100 5450 0    39   ~ 0
+Manche Mods verwenden Controller-Signal, falls USB-Controller genutzt wird,\nkönnen diese Mods, das N64-Signal nicht mehr verwerten. Auf diesem Pin\nwird ein Abfragen des Controllers und dessen Antwort unabhängig vom\nverwendeten Controller abgebildet.
+$Comp
+L power:GND #PWR01
+U 1 1 58C048B3
+P 1150 1100
+F 0 "#PWR01" H 1150 850 50  0001 C CNN
+F 1 "GND" H 1150 950 50  0000 C CNN
+F 2 "" H 1150 1100 50  0000 C CNN
+F 3 "" H 1150 1100 50  0000 C CNN
+	1    1150 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1100 1150 1000
+Wire Wire Line
+	1150 1000 1350 1000
+Wire Wire Line
+	1350 900  1150 900 
+Wire Wire Line
+	1150 900  1150 800 
+Text Label 1350 900  2    39   ~ 0
++3V3
+Text Label 1350 1000 2    39   ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_01x18 P2
+U 1 1 58C43D11
+P 10950 1550
+F 0 "P2" H 10950 2500 50  0000 C CNN
+F 1 "CONN_01X18" V 11050 1550 50  0000 C CNN
+F 2 "pif_fpga:Molex_BackFlip_18x0.5mm" H 10950 1550 50  0001 C CNN
+F 3 "" H 10950 1550 50  0000 C CNN
+	1    10950 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 2050 10750 2050
+Text Label 10350 2050 0    39   ~ 0
+BOOT
+Text Label 2100 6750 2    39   ~ 0
+P1_AUX
+Wire Wire Line
+	3200 1900 2750 1900
+Wire Wire Line
+	2750 2000 3200 2000
+Wire Wire Line
+	3200 2100 2750 2100
+Text Label 2750 1900 0    39   ~ 0
+RED
+Text Label 2750 2000 0    39   ~ 0
+GREEN
+Text Label 2750 2100 0    39   ~ 0
+BLUE
+$Sheet
+S 6550 2150 750  1100
+U 59F4D6C4
+F0 "MCU" 60
+F1 "mcu.sch" 60
+F2 "FPGA_IRQ" I L 6550 2650 39 
+F3 "FPGA_SCK" I L 6550 2250 39 
+F4 "FPGA_MISO" I L 6550 2450 39 
+F5 "FPGA_MOSI" I L 6550 2350 39 
+F6 "FPGA_CS" I L 6550 2550 39 
+F7 "UFM_SN" I L 6550 2750 39 
+F8 "BOOT" I L 6550 2850 39 
+F9 "UART_TX" I L 6550 2950 39 
+F10 "UART_RX" I L 6550 3050 39 
+F11 "FPGA_DONE" I L 6550 3150 39 
+$EndSheet
+Wire Wire Line
+	6550 2250 6100 2250
+Wire Wire Line
+	6100 2350 6550 2350
+Wire Wire Line
+	6550 2450 6100 2450
+Wire Wire Line
+	6100 2550 6550 2550
+Wire Wire Line
+	6550 2650 6100 2650
+Text Label 6100 2250 0    39   ~ 0
+FPGA_SCK
+Text Label 6100 2350 0    39   ~ 0
+FPGA_MOSI
+Text Label 6100 2450 0    39   ~ 0
+FPGA_MISO
+Text Label 6100 2550 0    39   ~ 0
+FPGA_CS
+Text Label 6100 2650 0    39   ~ 0
+IRQ
+Text Label 6100 2750 0    39   ~ 0
+UFM_SN
+Wire Wire Line
+	6550 2750 6100 2750
+Wire Wire Line
+	6550 2850 6100 2850
+Wire Wire Line
+	6100 2950 6550 2950
+Wire Wire Line
+	6550 3050 6100 3050
+Text Label 6100 2850 0    39   ~ 0
+BOOT
+Text Label 6100 2950 0    39   ~ 0
+UART_TX
+Text Label 6100 3050 0    39   ~ 0
+UART_RX
+NoConn ~ 5300 4350
+NoConn ~ 5300 4450
+Wire Wire Line
+	6550 3150 6100 3150
+Text Label 6100 3150 0    39   ~ 0
+FPGA_DONE
+Wire Wire Line
+	10300 5950 10500 5950
+Wire Wire Line
+	10500 5950 10700 5950
+Wire Wire Line
+	10500 6350 10700 6350
+Wire Wire Line
+	10300 6350 10500 6350
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5BFB0AF0
+P 1150 800
+F 0 "#PWR0101" H 1150 650 50  0001 C CNN
+F 1 "+3V3" H 1165 973 50  0000 C CNN
+F 2 "" H 1150 800 50  0001 C CNN
+F 3 "" H 1150 800 50  0001 C CNN
+	1    1150 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5DFE2997
+P 9950 1950
+F 0 "TP4" H 10000 2200 50  0000 C CNN
+F 1 "TestPoint" V 10054 2022 50  0001 C CNN
+F 2 "pif_fpga:TP_0.8mm" H 10150 1950 50  0001 C CNN
+F 3 "~" H 10150 1950 50  0001 C CNN
+	1    9950 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5DFE4299
+P 10050 1950
+F 0 "TP5" H 10000 2200 50  0000 C CNN
+F 1 "TestPoint" V 10154 2022 50  0001 C CNN
+F 2 "pif_fpga:TP_0.8mm" H 10250 1950 50  0001 C CNN
+F 3 "~" H 10250 1950 50  0001 C CNN
+	1    10050 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9650 1750 10050 1750
+Wire Wire Line
+	9650 1850 9950 1850
+Wire Wire Line
+	9950 1950 9950 1850
+Connection ~ 9950 1850
+Wire Wire Line
+	9950 1850 10750 1850
+Wire Wire Line
+	10050 1950 10050 1750
+Connection ~ 10050 1750
+Wire Wire Line
+	10050 1750 10750 1750
+$EndSCHEMATC

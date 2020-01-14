@@ -1,0 +1,325 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32f413
+LIBS:silab
+LIBS:xc6slx9-tqg144
+LIBS:texas_instruments
+LIBS:microchip1
+LIBS:st
+LIBS:oscillators1
+LIBS:cypress1
+LIBS:lattice1
+LIBS:n64_pif_replacement-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP1642 U3
+U 1 1 588F1376
+P 4200 5000
+F 0 "U3" H 3950 5350 60  0000 C CNN
+F 1 "MCP1642" H 4200 5100 60  0000 C CNN
+F 2 "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm" H 4200 5000 60  0001 C CNN
+F 3 "" H 4200 5000 60  0000 C CNN
+	1    4200 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L1
+U 1 1 588F15FB
+P 3850 4500
+F 0 "L1" V 3922 4559 50  0000 R CNN
+F 1 "4u7" V 3800 4550 50  0000 R CNN
+F 2 "Choke_SMD:Choke_SMD_Wuerth-WE-PD2-Typ-MS" H 3850 4500 50  0001 C CNN
+F 3 "" H 3850 4500 50  0000 C CNN
+	1    3850 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 4500 4200 4500
+Wire Wire Line
+	4200 4500 4200 4550
+Wire Wire Line
+	4150 3150 5250 3150
+Wire Wire Line
+	3250 4750 3750 4750
+Wire Wire Line
+	3750 4500 3700 4500
+Wire Wire Line
+	3700 4500 3700 4750
+Connection ~ 3700 4750
+$Comp
+L C_Small C14
+U 1 1 588F1B8E
+P 3500 5050
+F 0 "C14" H 3510 5120 50  0000 L CNN
+F 1 "10u" H 3510 4970 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3500 5050 50  0001 C CNN
+F 3 "" H 3500 5050 50  0000 C CNN
+	1    3500 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R11
+U 1 1 588F1C00
+P 3650 5450
+F 0 "R11" H 3680 5470 50  0000 L CNN
+F 1 "47k" H 3680 5410 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 3650 5450 50  0001 C CNN
+F 3 "" H 3650 5450 50  0000 C CNN
+	1    3650 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R12
+U 1 1 588F1CD0
+P 4750 4900
+F 0 "R12" H 4780 4920 50  0000 L CNN
+F 1 "976k" H 4780 4860 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 4750 4900 50  0001 C CNN
+F 3 "" H 4750 4900 50  0000 C CNN
+	1    4750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R13
+U 1 1 588F1D48
+P 4750 5200
+F 0 "R13" H 4780 5220 50  0000 L CNN
+F 1 "309k" H 4780 5160 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 4750 5200 50  0001 C CNN
+F 3 "" H 4750 5200 50  0000 C CNN
+	1    4750 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 5600 6650 5600
+Wire Wire Line
+	4750 5600 4750 5300
+Wire Wire Line
+	4250 5450 4250 5600
+Connection ~ 4250 5600
+Wire Wire Line
+	4150 5450 4150 5600
+Connection ~ 4150 5600
+Wire Wire Line
+	3650 5550 3650 5600
+Connection ~ 3650 5600
+Wire Wire Line
+	3650 5350 3650 5250
+Wire Wire Line
+	3250 5250 3750 5250
+Connection ~ 3650 5250
+Wire Wire Line
+	3500 4950 3500 4750
+Connection ~ 3500 4750
+Wire Wire Line
+	3500 5150 3500 5600
+Connection ~ 3500 5600
+Text Label 3250 4750 0    39   ~ 0
++3V3
+Text Label 3250 5600 0    39   ~ 0
+GND
+Wire Wire Line
+	4750 5000 4750 5100
+Wire Wire Line
+	4650 5050 4750 5050
+Connection ~ 4750 5050
+Wire Wire Line
+	4650 4750 5800 4750
+Wire Wire Line
+	4750 4800 4750 4750
+Connection ~ 4750 4750
+Text Label 5000 4750 2    39   ~ 0
++5V0
+$Comp
+L C_Small C18
+U 1 1 588F238D
+P 5000 5150
+F 0 "C18" H 5010 5220 50  0000 L CNN
+F 1 "10u" H 5010 5070 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5000 5150 50  0001 C CNN
+F 3 "" H 5000 5150 50  0000 C CNN
+	1    5000 5150
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 5600
+Wire Wire Line
+	5000 5050 5000 4750
+Connection ~ 5000 4750
+Wire Wire Line
+	5000 5250 5000 5600
+Connection ~ 5000 5600
+$Comp
+L STMPS2141STR U4
+U 1 1 588F2830
+P 6200 4850
+F 0 "U4" H 6000 5050 39  0000 C CNN
+F 1 "STMPS2141STR" H 6250 4650 39  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 6200 4850 39  0001 C CNN
+F 3 "" H 6200 4850 39  0000 C CNN
+	1    6200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R14
+U 1 1 588F28F2
+P 5700 4550
+F 0 "R14" H 5730 4570 50  0000 L CNN
+F 1 "47k" H 5730 4510 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 5700 4550 50  0001 C CNN
+F 3 "" H 5700 4550 50  0000 C CNN
+	1    5700 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4850 5800 4850
+Wire Wire Line
+	5700 4650 5700 4850
+Connection ~ 5700 4850
+Wire Wire Line
+	5700 4450 5700 4350
+Wire Wire Line
+	5700 4350 5550 4350
+Text Label 5550 4350 0    39   ~ 0
++3V3
+Wire Wire Line
+	5800 4950 5750 4950
+Wire Wire Line
+	5750 4950 5750 5600
+Connection ~ 5750 5600
+$Comp
+L C_Small C19
+U 1 1 588F2BD4
+P 6650 5250
+F 0 "C19" H 6660 5320 50  0000 L CNN
+F 1 "10u" H 6660 5170 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6650 5250 50  0001 C CNN
+F 3 "" H 6650 5250 50  0000 C CNN
+	1    6650 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4950 6750 4950
+Wire Wire Line
+	6650 5150 6650 4950
+Connection ~ 6650 4950
+Wire Wire Line
+	6650 5600 6650 5350
+$Comp
+L L_Small L2
+U 1 1 58AFDB4F
+P 4050 3150
+F 0 "L2" V 4122 3209 50  0000 R CNN
+F 1 "Ferrite" V 4000 3200 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0603" H 4050 3150 50  0001 C CNN
+F 3 "" H 4050 3150 50  0000 C CNN
+	1    4050 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 3150 3650 3150
+$Comp
+L C_Small C16
+U 1 1 58AFE0E0
+P 4800 3300
+F 0 "C16" H 4810 3370 50  0000 L CNN
+F 1 "1u" H 4810 3220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4800 3300 50  0001 C CNN
+F 3 "" H 4800 3300 50  0000 C CNN
+	1    4800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C15
+U 1 1 58AFE140
+P 4600 3300
+F 0 "C15" H 4610 3370 50  0000 L CNN
+F 1 "10n" H 4610 3220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4600 3300 50  0001 C CNN
+F 3 "" H 4600 3300 50  0000 C CNN
+	1    4600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3200 4600 3150
+Connection ~ 4600 3150
+Wire Wire Line
+	4800 3150 4800 3200
+$Comp
+L C_Small C17
+U 1 1 58AFE91E
+P 5000 3300
+F 0 "C17" H 5010 3370 50  0000 L CNN
+F 1 "10u" H 5010 3220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5000 3300 50  0001 C CNN
+F 3 "" H 5000 3300 50  0000 C CNN
+	1    5000 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3150 5000 3200
+Connection ~ 4800 3150
+Wire Wire Line
+	5000 3450 5000 3400
+Wire Wire Line
+	3650 3450 5000 3450
+Wire Wire Line
+	4600 3400 4600 3450
+Connection ~ 4600 3450
+Wire Wire Line
+	4800 3400 4800 3450
+Connection ~ 4800 3450
+Text Label 3650 3450 0    39   ~ 0
+GND
+Connection ~ 5000 3150
+Text Label 5250 3150 2    39   ~ 0
++3V3
+Text HLabel 3650 3150 0    39   Input ~ 0
++3V3_EXT
+Text HLabel 5600 4850 0    39   Input ~ 0
+USB_PWR_EN
+Text HLabel 6750 4950 2    39   Output ~ 0
+USB_VBUS
+Text HLabel 3250 5250 0    39   Input ~ 0
+5V_EN
+$EndSCHEMATC

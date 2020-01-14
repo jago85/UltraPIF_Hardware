@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name pif-nus)(type Legacy)(uri ${KIPRJMOD}/libs/pif-nus.lib)(options "")(descr ""))
+)

@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name lattice1)(type Legacy)(uri ${KIPRJMOD}/libs/lattice1.lib)(options "")(descr ""))
+  (lib (name stm32f070)(type Legacy)(uri ${KIPRJMOD}/libs/stm32f070.lib)(options "")(descr ""))
+  (lib (name silab)(type Legacy)(uri ${KIPRJMOD}/libs/silab.lib)(options "")(descr ""))
+  (lib (name cypress1)(type Legacy)(uri ${KIPRJMOD}/libs/cypress1.lib)(options "")(descr ""))
+)

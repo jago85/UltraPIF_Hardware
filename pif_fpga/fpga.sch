@@ -1,0 +1,1096 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 3 4
+Title "UltraPIF Interface"
+Date "2019-12-16"
+Rev "5"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C_Small C8
+U 1 1 588A5EE0
+P 8700 9750
+F 0 "C8" H 8710 9820 50  0000 L CNN
+F 1 "100n" H 8710 9670 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8700 9750 50  0001 C CNN
+F 3 "" H 8700 9750 50  0000 C CNN
+	1    8700 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 588A6120
+P 8950 9750
+F 0 "C9" H 8960 9820 50  0000 L CNN
+F 1 "100n" H 8960 9670 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8950 9750 50  0001 C CNN
+F 3 "" H 8950 9750 50  0000 C CNN
+	1    8950 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 588B4DBC
+P 7050 9750
+F 0 "C7" H 7060 9820 50  0000 L CNN
+F 1 "100n" H 7060 9670 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7050 9750 50  0001 C CNN
+F 3 "" H 7050 9750 50  0000 C CNN
+	1    7050 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 588B4FC7
+P 6800 9750
+F 0 "C6" H 6810 9820 50  0000 L CNN
+F 1 "100n" H 6810 9670 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6800 9750 50  0001 C CNN
+F 3 "" H 6800 9750 50  0000 C CNN
+	1    6800 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 588B51FD
+P 6550 9750
+F 0 "C5" H 6560 9820 50  0000 L CNN
+F 1 "4u7" H 6560 9670 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6550 9750 50  0001 C CNN
+F 3 "" H 6550 9750 50  0000 C CNN
+	1    6550 9750
+	1    0    0    -1  
+$EndComp
+Text Label 6300 9600 0    39   ~ 0
++3V3
+Text Label 6300 9900 0    39   ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_01x06 P3
+U 1 1 588B9BC4
+P 1000 1450
+F 0 "P3" H 1000 1800 50  0000 C CNN
+F 1 "CONN_01X06" V 1100 1450 50  0000 C CNN
+F 2 "pif_fpga:PinHeader_1x06_P2.54mm_NoSolder" H 1000 1450 50  0001 C CNN
+F 3 "" H 1000 1450 50  0000 C CNN
+	1    1000 1450
+	-1   0    0    -1  
+$EndComp
+Text Label 1450 1650 2    39   ~ 0
+GND
+Text Label 1450 1750 2    39   ~ 0
++3V3
+Text Notes 900  1100 0    60   ~ 0
+JTAG
+Text Label 1450 3650 0    39   ~ 0
+FPGA_PROG
+Text Label 1450 3350 0    39   ~ 0
+FPGA_DONE
+Text Label 1450 3450 0    39   ~ 0
+FPGA_INIT
+Text Label 4550 3750 0    39   ~ 0
+FPGA_SCK
+Text Label 4550 5250 0    39   ~ 0
+FPGA_MOSI
+Text Label 1650 2800 0    39   ~ 0
++3V3
+$Comp
+L Device:R_Small R5
+U 1 1 58930151
+P 1950 3100
+F 0 "R5" V 1880 3019 50  0000 L CNN
+F 1 "220" V 2016 3025 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1950 3100 50  0001 C CNN
+F 3 "" H 1950 3100 50  0000 C CNN
+	1    1950 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small LD3
+U 1 1 589307A5
+P 1650 3100
+F 0 "LD3" H 1600 3225 50  0000 L CNN
+F 1 "LED_Small" H 1475 3000 50  0001 L CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 1650 3100 50  0001 C CNN
+F 3 "" V 1650 3100 50  0000 C CNN
+	1    1650 3100
+	1    0    0    -1  
+$EndComp
+Text Label 1400 3100 0    39   ~ 0
+GND
+$Comp
+L Device:R_Small R10
+U 1 1 58932AFB
+P 2350 2950
+F 0 "R10" H 2380 2970 50  0000 L CNN
+F 1 "220" H 2380 2910 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2350 2950 50  0001 C CNN
+F 3 "" H 2350 2950 50  0000 C CNN
+	1    2350 2950
+	1    0    0    -1  
+$EndComp
+Text Label 9150 4900 0    39   ~ 0
+CLK_FPGA
+$Comp
+L lattice1:LCMXO2-2000HC U2
+U 1 1 5895CD94
+P 2600 3100
+AR Path="/5895CD94" Ref="U2"  Part="1" 
+AR Path="/588464E1/5895CD94" Ref="U2"  Part="1" 
+F 0 "U2" H 2600 3250 60  0000 L CNN
+F 1 "LCMXO2-2000HC" H 2600 3150 60  0000 L CNN
+F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 4400 1900 60  0001 C CNN
+F 3 "" H 4400 1900 60  0001 C CNN
+	1    2600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L lattice1:LCMXO2-2000HC U2
+U 2 1 5895CE57
+P 7350 3100
+AR Path="/5895CE57" Ref="U2"  Part="2" 
+AR Path="/588464E1/5895CE57" Ref="U2"  Part="2" 
+F 0 "U2" H 7350 3250 60  0000 L CNN
+F 1 "LCMXO2-2000HC" H 7350 3150 60  0000 L CNN
+F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 9150 1900 60  0001 C CNN
+F 3 "" H 9150 1900 60  0001 C CNN
+	2    7350 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L lattice1:LCMXO2-2000HC U2
+U 3 1 5895CF2A
+P 5050 3100
+AR Path="/5895CF2A" Ref="U2"  Part="3" 
+AR Path="/588464E1/5895CF2A" Ref="U2"  Part="3" 
+F 0 "U2" H 5050 3250 60  0000 L CNN
+F 1 "LCMXO2-2000HC" H 5050 3150 60  0000 L CNN
+F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 6850 1900 60  0001 C CNN
+F 3 "" H 6850 1900 60  0001 C CNN
+	3    5050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L lattice1:LCMXO2-2000HC U2
+U 4 1 5895CFAB
+P 9650 4450
+AR Path="/5895CFAB" Ref="U2"  Part="4" 
+AR Path="/588464E1/5895CFAB" Ref="U2"  Part="4" 
+F 0 "U2" H 9650 4600 60  0000 L CNN
+F 1 "LCMXO2-2000HC" H 9650 4500 60  0000 L CNN
+F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 11450 3250 60  0001 C CNN
+F 3 "" H 11450 3250 60  0001 C CNN
+	4    9650 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L lattice1:LCMXO2-2000HC U2
+U 5 1 5895D02E
+P 9650 5600
+AR Path="/5895D02E" Ref="U2"  Part="5" 
+AR Path="/588464E1/5895D02E" Ref="U2"  Part="5" 
+F 0 "U2" H 9650 5750 60  0000 L CNN
+F 1 "LCMXO2-2000HC" H 9650 5650 60  0000 L CNN
+F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 11450 4400 60  0001 C CNN
+F 3 "" H 11450 4400 60  0001 C CNN
+	5    9650 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L lattice1:LCMXO2-2000HC U2
+U 6 1 5895D23D
+P 9650 3100
+AR Path="/5895D23D" Ref="U2"  Part="6" 
+AR Path="/588464E1/5895D23D" Ref="U2"  Part="6" 
+F 0 "U2" H 9650 3250 60  0000 L CNN
+F 1 "LCMXO2-2000HC" H 9650 3150 60  0000 L CNN
+F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 11450 1900 60  0001 C CNN
+F 3 "" H 11450 1900 60  0001 C CNN
+	6    9650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L lattice1:LCMXO2-2000HC U2
+U 7 1 58967712
+P 7500 9350
+AR Path="/58967712" Ref="U2"  Part="7" 
+AR Path="/588464E1/58967712" Ref="U2"  Part="7" 
+F 0 "U2" H 7500 9500 60  0000 L CNN
+F 1 "LCMXO2-2000HC" H 7500 9400 60  0000 L CNN
+F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 9000 8600 60  0001 C CNN
+F 3 "" H 9000 8600 60  0001 C CNN
+	7    7500 9350
+	1    0    0    -1  
+$EndComp
+Connection ~ 7300 10450
+Wire Wire Line
+	7300 10750 7000 10750
+Connection ~ 7300 10650
+Wire Wire Line
+	7300 10650 7350 10650
+Connection ~ 7300 10550
+Wire Wire Line
+	7300 10550 7350 10550
+Wire Wire Line
+	7300 10450 7350 10450
+Wire Wire Line
+	7300 9950 7300 10050
+Connection ~ 7300 9600
+Wire Wire Line
+	7300 9600 7300 9700
+Wire Wire Line
+	9100 4900 9500 4900
+Wire Wire Line
+	2350 2800 2350 2850
+Connection ~ 2350 3350
+Wire Wire Line
+	2350 3050 2350 3100
+Wire Wire Line
+	1400 3100 1550 3100
+Wire Wire Line
+	1850 3100 1750 3100
+Wire Wire Line
+	2050 3100 2350 3100
+Wire Wire Line
+	1650 2800 2350 2800
+Wire Wire Line
+	4900 5250 4500 5250
+Wire Wire Line
+	4500 3750 4900 3750
+Wire Wire Line
+	1400 3450 2450 3450
+Wire Wire Line
+	1400 3350 2350 3350
+Wire Wire Line
+	1200 1750 1450 1750
+Wire Wire Line
+	1200 1650 1450 1650
+Connection ~ 6800 9900
+Wire Wire Line
+	6800 9900 6800 9850
+Connection ~ 6550 9900
+Wire Wire Line
+	6550 9850 6550 9900
+Wire Wire Line
+	6300 9900 6550 9900
+Wire Wire Line
+	7050 9900 7050 9850
+Connection ~ 6550 9600
+Wire Wire Line
+	6550 9650 6550 9600
+Connection ~ 6800 9600
+Wire Wire Line
+	6800 9600 6800 9650
+Connection ~ 7050 9600
+Wire Wire Line
+	7050 9600 7050 9650
+Wire Wire Line
+	7300 9700 7350 9700
+Wire Wire Line
+	6300 9600 6550 9600
+Text Label 7000 10750 0    39   ~ 0
+GND
+Connection ~ 7300 10350
+Wire Wire Line
+	7350 10350 7300 10350
+Connection ~ 7300 10250
+Wire Wire Line
+	7350 10250 7300 10250
+Connection ~ 7300 10150
+Wire Wire Line
+	7350 10150 7300 10150
+Connection ~ 7300 10050
+Wire Wire Line
+	7350 10050 7300 10050
+Wire Wire Line
+	7300 9950 7350 9950
+Wire Wire Line
+	8450 9600 8500 9600
+Wire Wire Line
+	8700 9600 8700 9650
+Connection ~ 8700 9600
+Wire Wire Line
+	8700 9850 8700 9900
+Wire Wire Line
+	8700 9900 8950 9900
+Wire Wire Line
+	8950 9650 8950 9600
+Connection ~ 8950 9600
+Wire Wire Line
+	8950 9850 8950 9900
+Connection ~ 8950 9900
+Text Label 11300 9600 2    39   ~ 0
++3V3
+Text Label 11300 9900 2    39   ~ 0
+GND
+Text Label 4550 3850 0    39   ~ 0
+FPGA_MISO
+Wire Wire Line
+	4500 3850 4900 3850
+Wire Wire Line
+	8500 10650 8450 10650
+Wire Wire Line
+	8500 10500 8450 10500
+Connection ~ 8500 10500
+Wire Wire Line
+	8500 10350 8450 10350
+Connection ~ 8500 10350
+Wire Wire Line
+	8500 10200 8450 10200
+Connection ~ 8500 10200
+Wire Wire Line
+	8500 10100 8450 10100
+Connection ~ 8500 10100
+Wire Wire Line
+	8500 9950 8450 9950
+Connection ~ 8500 9950
+Wire Wire Line
+	8500 9850 8450 9850
+Connection ~ 8500 9850
+Wire Wire Line
+	8450 9700 8500 9700
+Connection ~ 8500 9700
+Connection ~ 8500 9600
+Wire Wire Line
+	8500 9600 8500 9700
+$Comp
+L Device:C_Small C10
+U 1 1 5896E500
+P 9250 9750
+F 0 "C10" H 9260 9820 50  0000 L CNN
+F 1 "100n" H 9260 9670 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9250 9750 50  0001 C CNN
+F 3 "" H 9250 9750 50  0000 C CNN
+	1    9250 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 5896E55A
+P 9500 9750
+F 0 "C11" H 9510 9820 50  0000 L CNN
+F 1 "100n" H 9510 9670 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9500 9750 50  0001 C CNN
+F 3 "" H 9500 9750 50  0000 C CNN
+	1    9500 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 5896E5B5
+P 9800 9750
+F 0 "C12" H 9810 9820 50  0000 L CNN
+F 1 "100n" H 9810 9670 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9800 9750 50  0001 C CNN
+F 3 "" H 9800 9750 50  0000 C CNN
+	1    9800 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 5896E615
+P 10050 9750
+F 0 "C13" H 10060 9820 50  0000 L CNN
+F 1 "100n" H 10060 9670 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10050 9750 50  0001 C CNN
+F 3 "" H 10050 9750 50  0000 C CNN
+	1    10050 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C14
+U 1 1 5896E80C
+P 10350 9750
+F 0 "C14" H 10360 9820 50  0000 L CNN
+F 1 "100n" H 10360 9670 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10350 9750 50  0001 C CNN
+F 3 "" H 10350 9750 50  0000 C CNN
+	1    10350 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C15
+U 1 1 5896E872
+P 10650 9750
+F 0 "C15" H 10660 9820 50  0000 L CNN
+F 1 "100n" H 10660 9670 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10650 9750 50  0001 C CNN
+F 3 "" H 10650 9750 50  0000 C CNN
+	1    10650 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 5896E9ED
+P 10950 9750
+F 0 "C16" H 10960 9820 50  0000 L CNN
+F 1 "100n" H 10960 9670 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10950 9750 50  0001 C CNN
+F 3 "" H 10950 9750 50  0000 C CNN
+	1    10950 9750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 9850 9250 9900
+Connection ~ 9250 9900
+Wire Wire Line
+	9500 9850 9500 9900
+Connection ~ 9500 9900
+Wire Wire Line
+	9800 9850 9800 9900
+Connection ~ 9800 9900
+Wire Wire Line
+	10050 9850 10050 9900
+Connection ~ 10050 9900
+Wire Wire Line
+	10350 9850 10350 9900
+Connection ~ 10350 9900
+Wire Wire Line
+	10650 9850 10650 9900
+Connection ~ 10650 9900
+Wire Wire Line
+	10950 9850 10950 9900
+Connection ~ 10950 9900
+Wire Wire Line
+	9250 9650 9250 9600
+Connection ~ 9250 9600
+Wire Wire Line
+	9500 9650 9500 9600
+Connection ~ 9500 9600
+Wire Wire Line
+	9800 9650 9800 9600
+Connection ~ 9800 9600
+Wire Wire Line
+	10050 9650 10050 9600
+Connection ~ 10050 9600
+Wire Wire Line
+	10350 9650 10350 9600
+Connection ~ 10350 9600
+Wire Wire Line
+	10650 9650 10650 9600
+Connection ~ 10650 9600
+Wire Wire Line
+	10950 9650 10950 9600
+Connection ~ 10950 9600
+Wire Wire Line
+	2100 4450 2450 4450
+Wire Wire Line
+	2100 4550 2450 4550
+Wire Wire Line
+	2450 4650 2100 4650
+Wire Wire Line
+	2450 4750 2100 4750
+Text Label 2100 4450 0    39   ~ 0
+TMS
+Text Label 2100 4550 0    39   ~ 0
+TCK
+Text Label 2100 4650 0    39   ~ 0
+TDI
+Text Label 2100 4750 0    39   ~ 0
+TDO
+Wire Wire Line
+	2450 3650 1400 3650
+Wire Wire Line
+	4500 5150 4900 5150
+Text Label 6850 5350 0    39   ~ 0
+FPGA_CS
+Text Label 9150 4800 0    39   ~ 0
+CLK_CIC_EEP
+Text Label 9150 5000 0    39   ~ 0
+RC_POR
+Text Label 9150 5100 0    39   ~ 0
+CIC_DCLK
+Text Label 9150 5200 0    39   ~ 0
+OUTPUT_RST
+Text Label 4550 3350 0    39   ~ 0
+CIC_DIO
+Text Label 4550 3450 0    39   ~ 0
+COLD_RESET
+Text Label 4550 3550 0    39   ~ 0
+NMI_CPU
+Text Label 4550 3650 0    39   ~ 0
+EN_PIF
+Text Label 4550 3950 0    39   ~ 0
+CLK_PIF
+Text Label 4550 4150 0    39   ~ 0
+ADR_PIF
+Text Label 4550 4050 0    39   ~ 0
+DAT_PIF
+Text Label 6850 4050 0    39   ~ 0
+RESET_BTN
+Text Label 6850 3950 0    39   ~ 0
+INT_CPU
+Text Label 6850 3850 0    39   ~ 0
+EEP_DAT
+Text Label 6850 3650 0    39   ~ 0
+P4_DAT_OUT
+Text Label 6850 3750 0    39   ~ 0
+P4_DAT_IN
+Text Label 4550 4350 0    39   ~ 0
+P3_DAT_OUT
+Text Label 4550 4250 0    39   ~ 0
+P3_DAT_IN
+Text Label 4550 4550 0    39   ~ 0
+P2_DAT_OUT
+Text Label 4550 4450 0    39   ~ 0
+P2_DAT_IN
+Text Label 4550 5050 0    39   ~ 0
+P1_DAT_OUT
+Text Label 4550 4950 0    39   ~ 0
+P1_DAT_IN
+Wire Wire Line
+	9100 4800 9500 4800
+Wire Wire Line
+	9500 5000 9100 5000
+Wire Wire Line
+	6800 4050 7200 4050
+Wire Wire Line
+	9500 5100 9100 5100
+Wire Wire Line
+	9500 5200 9100 5200
+Wire Wire Line
+	6800 3950 7200 3950
+Wire Wire Line
+	4900 3350 4500 3350
+Wire Wire Line
+	4900 3450 4500 3450
+Wire Wire Line
+	6800 3850 7200 3850
+Wire Wire Line
+	4500 3550 4900 3550
+Wire Wire Line
+	6800 3650 7200 3650
+Wire Wire Line
+	4900 3650 4500 3650
+Wire Wire Line
+	6800 3750 7200 3750
+Wire Wire Line
+	4900 3950 4500 3950
+Wire Wire Line
+	4500 4350 4900 4350
+Wire Wire Line
+	4500 4250 4900 4250
+Wire Wire Line
+	4900 4150 4500 4150
+Wire Wire Line
+	4500 4550 4900 4550
+Wire Wire Line
+	4500 4450 4900 4450
+Wire Wire Line
+	4500 4050 4900 4050
+Wire Wire Line
+	4900 5050 4500 5050
+Wire Wire Line
+	4900 4950 4500 4950
+Connection ~ 2350 3100
+Wire Wire Line
+	6800 5350 7200 5350
+Text Label 4550 5150 0    39   ~ 0
+UFM_SN
+Wire Wire Line
+	9500 3850 9150 3850
+Wire Wire Line
+	9500 3750 9150 3750
+Text Label 9150 3750 0    39   ~ 0
+SCL
+Text Label 9150 3850 0    39   ~ 0
+SDA
+Text HLabel 9100 4900 0    39   Input ~ 0
+CLK_FPGA
+Text HLabel 9150 3850 0    39   BiDi ~ 0
+SDA
+Text HLabel 9150 3750 0    39   BiDi ~ 0
+SCL
+Text HLabel 9100 4800 0    39   Input ~ 0
+CLK_CIC_EEP
+Text HLabel 9100 5000 0    39   Input ~ 0
+RC_POR
+Text HLabel 6800 4050 0    39   Input ~ 0
+RESET_BTN
+Text HLabel 9100 5100 0    39   Output ~ 0
+CIC_DCLK
+Text HLabel 9100 5200 0    39   Output ~ 0
+OUTPUT_RST
+Text HLabel 6800 3950 0    39   Output ~ 0
+INT_CPU
+Text HLabel 4500 3350 0    39   BiDi ~ 0
+CIC_DIO
+Text HLabel 4500 3450 0    39   Output ~ 0
+COLD_RESET
+Text HLabel 6800 3850 0    39   BiDi ~ 0
+EEP_DAT
+Text HLabel 4500 3550 0    39   Output ~ 0
+NMI_CPU
+Text HLabel 6800 3650 0    39   Output ~ 0
+P4_DAT_OUT
+Text HLabel 4500 4350 0    39   Output ~ 0
+P3_DAT_OUT
+Text HLabel 4500 4550 0    39   Output ~ 0
+P2_DAT_OUT
+Text HLabel 4500 5050 0    39   Output ~ 0
+P1_DAT_OUT
+Text HLabel 4500 4050 0    39   Output ~ 0
+DAT_PIF
+Text HLabel 4500 3650 0    39   Input ~ 0
+EN_PIF
+Text HLabel 6800 3750 0    39   Input ~ 0
+P4_DAT_IN
+Text HLabel 4500 3950 0    39   Input ~ 0
+CLK_PIF
+Text HLabel 4500 4250 0    39   Input ~ 0
+P3_DAT_IN
+Text HLabel 4500 4150 0    39   Input ~ 0
+ADR_PIF
+Text HLabel 4500 4450 0    39   Input ~ 0
+P2_DAT_IN
+Text HLabel 4500 4950 0    39   Input ~ 0
+P1_DAT_IN
+Text HLabel 4500 3750 0    39   Input ~ 0
+FPGA_SCK
+Text HLabel 4500 3850 0    39   Output ~ 0
+FPGA_MISO
+Text HLabel 4500 5150 0    39   Input ~ 0
+UFM_SN
+Text HLabel 4500 5250 0    39   Input ~ 0
+FPGA_MOSI
+Text HLabel 6800 5350 0    39   Input ~ 0
+FPGA_CS
+Text HLabel 1400 3350 0    39   Input ~ 0
+FPGA_DONE
+Text HLabel 1400 3450 0    39   Input ~ 0
+FPGA_INIT
+Text HLabel 1400 3650 0    39   Input ~ 0
+FPGA_PROG
+Text Notes 4250 5800 0    60   ~ 0
+UFM_SN hat internen Pull up.\nFür FPGA_CS im Design aktivieren.
+Wire Wire Line
+	7200 5250 6800 5250
+Text Label 6850 5250 0    39   ~ 0
+IRQ
+Text HLabel 6800 5250 0    39   Output ~ 0
+IRQ
+Wire Wire Line
+	7200 3550 6800 3550
+Text Label 6850 3550 0    39   ~ 0
+P1_AUX
+Text HLabel 6800 3550 0    39   Output ~ 0
+P1_AUX
+Wire Wire Line
+	2450 3750 2050 3750
+Text Label 2050 3750 0    39   ~ 0
++3V3
+Text Notes 1000 3750 0    39   ~ 0
+JTAGENB high, nur für alle Fälle
+$Comp
+L power:GND #PWR05
+U 1 1 58C032ED
+P 1150 2500
+F 0 "#PWR05" H 1150 2250 50  0001 C CNN
+F 1 "GND" H 1150 2350 50  0000 C CNN
+F 2 "" H 1150 2500 50  0000 C CNN
+F 3 "" H 1150 2500 50  0000 C CNN
+	1    1150 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2500 1150 2400
+Wire Wire Line
+	1150 2400 1350 2400
+Wire Wire Line
+	1150 2200 1150 2300
+Wire Wire Line
+	1150 2300 1350 2300
+Text Label 1350 2300 2    39   ~ 0
++3V3
+Text Label 1350 2400 2    39   ~ 0
+GND
+NoConn ~ 2450 3850
+NoConn ~ 2450 3950
+NoConn ~ 2450 4050
+NoConn ~ 2450 4350
+NoConn ~ 2450 4850
+NoConn ~ 2450 4950
+NoConn ~ 2450 5050
+NoConn ~ 2450 5150
+NoConn ~ 2450 4250
+NoConn ~ 7200 4150
+NoConn ~ 7200 4250
+NoConn ~ 7200 4850
+NoConn ~ 7200 4950
+NoConn ~ 7200 5050
+NoConn ~ 7200 5150
+NoConn ~ 2450 4150
+NoConn ~ 9500 3350
+NoConn ~ 9500 3450
+NoConn ~ 9500 3550
+NoConn ~ 9500 3650
+NoConn ~ 9500 3950
+NoConn ~ 9500 4050
+NoConn ~ 9500 5850
+NoConn ~ 9500 5950
+NoConn ~ 9500 6050
+NoConn ~ 9500 6150
+NoConn ~ 9500 6250
+NoConn ~ 9500 6350
+$Comp
+L Device:LED_Small LD1
+U 1 1 58FB3627
+P 7800 6000
+F 0 "LD1" H 7735 5923 50  0000 L CNN
+F 1 "LED_Small" H 7625 5900 50  0001 L CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 7800 6000 50  0001 C CNN
+F 3 "" V 7800 6000 50  0000 C CNN
+	1    7800 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small LD2
+U 1 1 58FB3E71
+P 7800 6250
+F 0 "LD2" H 7735 6177 50  0000 L CNN
+F 1 "LED_Small" H 7625 6150 50  0001 L CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 7800 6250 50  0001 C CNN
+F 3 "" V 7800 6250 50  0000 C CNN
+	1    7800 6250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R14
+U 1 1 58FB540B
+P 7500 6250
+F 0 "R14" V 7430 6176 50  0000 L CNN
+F 1 "330" V 7566 6175 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7500 6250 50  0001 C CNN
+F 3 "" H 7500 6250 50  0000 C CNN
+	1    7500 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 58FB8165
+P 7500 6000
+F 0 "R13" V 7430 5928 50  0000 L CNN
+F 1 "330" V 7566 5925 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7500 6000 50  0001 C CNN
+F 3 "" H 7500 6000 50  0000 C CNN
+	1    7500 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7600 6000 7700 6000
+Wire Wire Line
+	7600 6250 7700 6250
+Wire Wire Line
+	7900 6000 8000 6000
+Wire Wire Line
+	8000 6000 8000 6250
+Wire Wire Line
+	7600 6800 8000 6800
+Connection ~ 8000 6250
+Text Label 8200 6800 2    39   ~ 0
+GND
+Wire Wire Line
+	7100 6000 7400 6000
+Wire Wire Line
+	7100 6250 7400 6250
+Text Label 7100 6000 0    39   ~ 0
+LED1
+Text Label 7100 6250 0    39   ~ 0
+LED2
+Wire Wire Line
+	6800 3350 7200 3350
+Wire Wire Line
+	7200 3450 6800 3450
+Text Label 6800 3350 0    39   ~ 0
+LED1
+Text Label 6800 3450 0    39   ~ 0
+LED2
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 58FBD5E6
+P 7450 6550
+F 0 "JP1" H 7450 6630 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 7460 6490 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7450 6550 50  0001 C CNN
+F 3 "" H 7450 6550 50  0001 C CNN
+	1    7450 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 58FBD7A5
+P 7450 6800
+F 0 "JP2" H 7450 6880 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 7460 6740 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7450 6800 50  0001 C CNN
+F 3 "" H 7450 6800 50  0001 C CNN
+	1    7450 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 6250 8000 6250
+Connection ~ 8000 6550
+Connection ~ 8000 6800
+Wire Wire Line
+	7000 6800 7300 6800
+Text Label 7000 6550 0    39   ~ 0
+JP1
+Text Label 7000 6800 0    39   ~ 0
+JP2
+Wire Wire Line
+	7200 4450 6900 4450
+Text Label 6900 4450 0    39   ~ 0
+JP1
+Wire Wire Line
+	6900 4550 7200 4550
+Text Label 6900 4550 0    39   ~ 0
+JP2
+Text HLabel 4500 4650 0    39   Input ~ 0
+RED
+Text HLabel 4500 4750 0    39   Input ~ 0
+GREEN
+Text HLabel 4500 4850 0    39   Input ~ 0
+BLUE
+Wire Wire Line
+	4500 4650 4900 4650
+Wire Wire Line
+	4900 4750 4500 4750
+Wire Wire Line
+	4500 4850 4900 4850
+Text Label 4550 4650 0    39   ~ 0
+RED
+Text Label 4550 4750 0    39   ~ 0
+GREEN
+Text Label 4550 4850 0    39   ~ 0
+BLUE
+Text Label 7000 7050 0    39   ~ 0
+JP3
+Text Label 7000 7300 0    39   ~ 0
+JP4
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 59F77927
+P 7450 7300
+F 0 "JP4" H 7450 7380 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 7460 7240 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7450 7300 50  0001 C CNN
+F 3 "" H 7450 7300 50  0001 C CNN
+	1    7450 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 7050 7300 7050
+Wire Wire Line
+	7000 7300 7300 7300
+Wire Wire Line
+	8000 7300 7600 7300
+Wire Wire Line
+	7600 7050 8000 7050
+Connection ~ 8000 7050
+Wire Wire Line
+	7200 4650 6900 4650
+Wire Wire Line
+	7200 4750 6900 4750
+Text Label 6900 4650 0    39   ~ 0
+JP3
+Text Label 6900 4750 0    39   ~ 0
+JP4
+Wire Wire Line
+	9100 4700 9500 4700
+Text Label 9100 4700 0    39   ~ 0
+TEST1
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5A020358
+P 4400 7700
+F 0 "TP1" H 4400 7970 50  0000 C CNN
+F 1 "TEST_1P" H 4400 7900 50  0000 C CNN
+F 2 "pif_fpga:TP_0.8mm" H 4600 7700 50  0001 C CNN
+F 3 "" H 4600 7700 50  0001 C CNN
+	1    4400 7700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5AD1E597
+P 4400 7350
+F 0 "TP2" H 4400 7620 50  0000 C CNN
+F 1 "TEST_1P" H 4400 7550 50  0000 C CNN
+F 2 "pif_fpga:TP_0.8mm" H 4600 7350 50  0001 C CNN
+F 3 "" H 4600 7350 50  0001 C CNN
+	1    4400 7350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6900 4350 7200 4350
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5AD1FEA8
+P 4400 7000
+F 0 "TP3" H 4400 7270 50  0000 C CNN
+F 1 "TEST_1P" H 4400 7200 50  0000 C CNN
+F 2 "pif_fpga:TP_0.8mm" H 4600 7000 50  0001 C CNN
+F 3 "" H 4600 7000 50  0001 C CNN
+	1    4400 7000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 3550 2450 3550
+Text Label 2050 3550 0    39   ~ 0
+TEST3
+Wire Wire Line
+	4400 7000 4700 7000
+Wire Wire Line
+	4400 7350 4700 7350
+Wire Wire Line
+	4400 7700 4700 7700
+Text Label 4700 7700 2    39   ~ 0
+TEST1
+Text Label 4700 7350 2    39   ~ 0
+TEST2
+Text Label 4700 7000 2    39   ~ 0
+TEST3
+Text Label 6900 4350 0    39   ~ 0
+TEST2
+Wire Wire Line
+	7300 10450 7300 10550
+Wire Wire Line
+	7300 10650 7300 10750
+Wire Wire Line
+	7300 10550 7300 10650
+Wire Wire Line
+	7300 9600 7350 9600
+Wire Wire Line
+	2350 3350 2450 3350
+Wire Wire Line
+	6800 9900 7050 9900
+Wire Wire Line
+	6550 9900 6800 9900
+Wire Wire Line
+	6550 9600 6800 9600
+Wire Wire Line
+	6800 9600 7050 9600
+Wire Wire Line
+	7050 9600 7300 9600
+Wire Wire Line
+	7300 10350 7300 10450
+Wire Wire Line
+	7300 10250 7300 10350
+Wire Wire Line
+	7300 10150 7300 10250
+Wire Wire Line
+	7300 10050 7300 10150
+Wire Wire Line
+	8700 9600 8950 9600
+Wire Wire Line
+	8950 9600 9250 9600
+Wire Wire Line
+	8950 9900 9250 9900
+Wire Wire Line
+	8500 10500 8500 10650
+Wire Wire Line
+	8500 10350 8500 10500
+Wire Wire Line
+	8500 10200 8500 10350
+Wire Wire Line
+	8500 10100 8500 10200
+Wire Wire Line
+	8500 9950 8500 10100
+Wire Wire Line
+	8500 9850 8500 9950
+Wire Wire Line
+	8500 9700 8500 9850
+Wire Wire Line
+	8500 9600 8700 9600
+Wire Wire Line
+	9250 9900 9500 9900
+Wire Wire Line
+	9500 9900 9800 9900
+Wire Wire Line
+	9800 9900 10050 9900
+Wire Wire Line
+	10050 9900 10350 9900
+Wire Wire Line
+	10350 9900 10650 9900
+Wire Wire Line
+	10650 9900 10950 9900
+Wire Wire Line
+	10950 9900 11300 9900
+Wire Wire Line
+	9250 9600 9500 9600
+Wire Wire Line
+	9500 9600 9800 9600
+Wire Wire Line
+	9800 9600 10050 9600
+Wire Wire Line
+	10050 9600 10350 9600
+Wire Wire Line
+	10350 9600 10650 9600
+Wire Wire Line
+	10650 9600 10950 9600
+Wire Wire Line
+	10950 9600 11300 9600
+Wire Wire Line
+	2350 3100 2350 3350
+Wire Wire Line
+	8000 6250 8000 6550
+Wire Wire Line
+	8000 6550 8000 6800
+Wire Wire Line
+	8000 6800 8200 6800
+Wire Wire Line
+	8000 6800 8000 7050
+Wire Wire Line
+	8000 7050 8000 7300
+Wire Wire Line
+	7300 6550 7000 6550
+Wire Wire Line
+	7600 6550 8000 6550
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 59F77821
+P 7450 7050
+F 0 "JP3" H 7450 7130 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 7460 6990 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7450 7050 50  0001 C CNN
+F 3 "" H 7450 7050 50  0001 C CNN
+	1    7450 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5BFA8490
+P 1150 2200
+F 0 "#PWR0103" H 1150 2050 50  0001 C CNN
+F 1 "+3V3" H 1165 2373 50  0000 C CNN
+F 2 "" H 1150 2200 50  0001 C CNN
+F 3 "" H 1150 2200 50  0001 C CNN
+	1    1150 2200
+	1    0    0    -1  
+$EndComp
+Text Label 1450 1550 2    39   ~ 0
+TCK
+Text Label 1450 1350 2    39   ~ 0
+TDI
+Text Label 1450 1250 2    39   ~ 0
+TMS
+Text Label 1450 1450 2    39   ~ 0
+TDO
+Wire Wire Line
+	1200 1250 1450 1250
+Wire Wire Line
+	1200 1450 1450 1450
+Wire Wire Line
+	1200 1350 1450 1350
+Wire Wire Line
+	1200 1550 1450 1550
+Text Notes 1700 1450 0    50   ~ 0
+JTAG pins have internal pull ups
+$EndSCHEMATC
