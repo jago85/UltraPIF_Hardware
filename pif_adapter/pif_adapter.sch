@@ -332,7 +332,7 @@ U 1 1 5E090524
 P 9300 3750
 F 0 "P1" H 9350 4867 50  0000 C CNN
 F 1 "Conn_02x20_Odd_Even" H 9350 4776 50  0000 C CNN
-F 2 "pif_adapter:Amphenol_MezzoStak-10106813_2x20x0.5mm" H 9300 3750 50  0001 C CNN
+F 2 "pif_adapter:Hirose_DF12D-40DP-0.5V_2x20_P0.50mm_Vertical" H 9300 3750 50  0001 C CNN
 F 3 "~" H 9300 3750 50  0001 C CNN
 	1    9300 3750
 	1    0    0    -1  
