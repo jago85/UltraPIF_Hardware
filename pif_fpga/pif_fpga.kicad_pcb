@@ -2915,7 +2915,7 @@
   (gr_text TDO (at 156 118) (layer F.SilkS) (tstamp 58C42CC2)
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
-  (gr_text "Rev. 5" (at 146.45 138.55) (layer F.SilkS) (tstamp 58FC9107)
+  (gr_text "Rev. 6" (at 146.45 138.55) (layer F.SilkS) (tstamp 58FC9107)
     (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
   )
   (gr_text TMS (at 160.7 118) (layer F.SilkS) (tstamp 58C42D00)
