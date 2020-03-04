@@ -10,6 +10,12 @@
   )
 
   (page A4)
+  (title_block
+    (title "UltraPIF Adapter")
+    (date 2020-03-04)
+    (rev 4)
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
@@ -651,7 +657,7 @@
     (arrow2a (pts (xy 155 95.5) (xy 154.413579 96.626504)))
     (arrow2b (pts (xy 155 95.5) (xy 155.586421 96.626504)))
   )
-  (gr_text "PIF Adapter Rev.3" (at 150.65 108.25 90) (layer F.SilkS) (tstamp 58C19E48)
+  (gr_text "PIF Adapter Rev.4" (at 150.65 108.25 90) (layer F.SilkS) (tstamp 58C19E48)
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
   (gr_text +3.3V (at 150.1 99.6 90) (layer F.SilkS) (tstamp 58C19E32)
@@ -666,8 +672,8 @@
   (gr_text XTAL (at 142.9 99.3 90) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
-  (gr_line (start 153 117) (end 153 95.5) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 140 117) (end 153 117) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 152 117) (end 152 95.5) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 141 117) (end 152 117) (layer Edge.Cuts) (width 0.15))
   (dimension 21.5 (width 0.3) (layer Dwgs.User) (tstamp 5E09336E)
     (gr_text "21,500 mm" (at 136.9 106.25 270) (layer Dwgs.User) (tstamp 5E09336E)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
@@ -692,8 +698,8 @@
     (arrow2a (pts (xy 140 94) (xy 141.126504 94.586421)))
     (arrow2b (pts (xy 140 94) (xy 141.126504 93.413579)))
   )
-  (gr_line (start 140 95.5) (end 140 117) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 140 95.5) (end 153 95.5) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 141 95.5) (end 141 117) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 141 95.5) (end 152 95.5) (layer Edge.Cuts) (width 0.15))
 
   (segment (start 141.6 97.245) (end 141 97.245) (width 0.15) (layer F.Cu) (net 1))
   (segment (start 143.49 104.75) (end 143.325 104.585) (width 0.15) (layer F.Cu) (net 1))
