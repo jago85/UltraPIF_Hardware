@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "UltraPIF Adapter"
 Date "2020-03-04"
-Rev "3"
+Rev "4"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -332,7 +332,7 @@ U 1 1 5E090524
 P 9300 3750
 F 0 "P1" H 9350 4867 50  0000 C CNN
 F 1 "Conn_02x20_Odd_Even" H 9350 4776 50  0000 C CNN
-F 2 "pif_adapter:Amphenol_MezzoStak-10106813_2x20x0.5mm" H 9300 3750 50  0001 C CNN
+F 2 "pif_adapter:Hirose_DF12D-40DP-0.5V_2x20_P0.50mm_Vertical" H 9300 3750 50  0001 C CNN
 F 3 "~" H 9300 3750 50  0001 C CNN
 	1    9300 3750
 	1    0    0    -1  
